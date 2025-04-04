@@ -3,8 +3,13 @@ Welcome to the Qlik Sense On Premise Rapid Onboarder.  The goal of this script i
 
 File Descriptions:
 Config.YAML - Contains the global setup and configuration parameters.
+
 Delete.py - Deletes an entire implementation.  Used to cleanup everything after testing to prevent unwanted AWS hosting charges.
+
 Main.py - Contains the primary process.
+
 Requirements.txt - Contains all the dependent libraries needed to start the process.
+
 Run Script.txt - Contains MSDOS script that executes the Python scripts.
+
 Setup.py - Contains the installation of libraries and the AWSCLI client which are needed to execute the process.
