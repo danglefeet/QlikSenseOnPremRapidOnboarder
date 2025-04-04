@@ -13,3 +13,6 @@ Requirements.txt - Contains all the dependent libraries needed to start the proc
 Run Script.txt - Contains MSDOS script that executes the Python scripts.
 
 Setup.py - Contains the installation of libraries and the AWSCLI client which are needed to execute the process.
+
+
+Looking to contribute?  Happy to have you.  DM me for more info.
