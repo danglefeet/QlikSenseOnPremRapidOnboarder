@@ -1,8 +1,8 @@
 # General settings
 customer_code: "WEYY001"
 region: "us-east-1"
-transit_gateway_id: "tgw-018a28014c5fd5aef"
-mainhost_bucket: "mainhost-s3-bucket"
+transit_gateway_id: "Transit Gateway goes here"
+mainhost_bucket: "S3 Bucket Name"
 use_aws_rds: true
 db_username: "admin"
 db_password: "securepassword123"
