@@ -1,0 +1,99 @@
+# General settings
+customer_code: "WEYY001"
+region: "us-east-1"
+transit_gateway_id: "tgw-018a28014c5fd5aef"
+mainhost_bucket: "mainhost-s3-bucket"
+use_aws_rds: true
+db_username: "admin"
+db_password: "securepassword123"
+account_id: "x"
+delete_resources: true  # Set to 'false' to skip the deletion of customer resources
+
+# Ports to whitelist
+allowed_ports:
+  - 443
+  - 4243
+  - 4239
+  - 4242
+  - 4747
+  - 4899
+  - 4900
+  - 4949
+  - 7070
+  - 4244
+  - 4748
+  - 4444
+  - 5050
+  - 9200
+  - 4545
+  - 4570
+  - 5151
+  - 5252
+  - 4432
+  - 8088
+  - 3003
+  - 4555
+  - 4950
+  - 5928
+  - 9028
+  - 9031
+  - 9032
+  - 9041
+  - 9051
+  - 9054
+  - 9079
+  - 9080
+  - 9081
+  - 9082
+  - 9090
+  - 9098
+  - 21060
+  - 46277
+  - 64210
+  - 5926
+  - 5927
+  - 5929
+  - 7080
+  - 7081
+  - 4850
+  - 4952
+  - 5432
+
+# Permissions for service accounts
+permissions:
+  service: "arn:aws:iam::aws:policy/PowerUserAccess"
+  promotion: "arn:aws:iam::aws:policy/AmazonS3FullAccess"
+  restricted: "arn:aws:iam::aws:policy/ReadOnlyAccess"
+
+# Environments and nodes
+environments:
+  - name: "production"
+    code: "01"
+    nodes:
+      - type: "central"
+        instance_type: "t3.nano"
+        ami_id: "ami-0848083dfcac1b527"
+        count: 1
+      - type: "worker"
+        instance_type: "t3.nano"
+        ami_id: "ami-0848083dfcac1b527"
+        count: 1
+  - name: "development"
+    code: "04"
+    nodes:
+      - type: "central"
+        instance_type: "t3.nano"
+        ami_id: "ami-0848083dfcac1b527"
+        count: 1
+      - type: "worker"
+        instance_type: "t3.nano"
+        ami_id: "ami-0848083dfcac1b527"
+        count: 1
+
+# Images for nodes
+images:
+  central: "ami-0848083dfcac1b527"
+  worker: "ami-0848083dfcac1b527"
+  nprinting: "ami-0848083dfcac1b527"
+  geoqlik: "ami-0848083dfcac1b527"
+  platform: "ami-0848083dfcac1b527"

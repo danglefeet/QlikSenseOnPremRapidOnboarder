@@ -1,0 +1,10 @@
+cd\
+e:
+cd "E:\My Drive\Work\Side Work Planning\QRO"
+python3 -m venv virtual
+.\virtual\Scripts\activate
+python delete.py
+python main.py
+pip install -r requirements.txt --upgrade --upgrade-strategy only-if-needed
+
+
